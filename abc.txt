@@ -1,1 +1,32 @@
 my data code.
+
+git init
+git add . || file name           => add files
+git status 
+git commit -m "Initial commit"   => add commit
+git log                          => see the commit
+
+git branch -M main               => rename branch
+git remote add origin <url>      => link to remote repo
+git push -u origin main         => push to remote repo
+git clone <url>                  => clone remote repo
+git pull <url>                   => pull from remote repo
+git checkout -b <branch_name>    => create and switch to new branch
+git checkout <branch_name>       => switch to existing branch
+git merge <branch_name>          => merge branch into current branch
+git diff                         => see changes
+git stash                        => save changes temporarily
+git stash pop                    => retrieve saved changes
+git reset --hard HEAD            => discard changes
+git rm <file_name>               => remove file
+git mv <old_name> <new_name>     => rename file
+git tag <tag_name>               => create a tag
+git show <tag_name>              => show tag details
+git fetch                        => fetch changes from remote
+git rebase <branch_name>         => rebase current branch onto another branch
+git cherry-pick <commit_hash>    => apply a specific commit from another branch
+git log --oneline                => see concise commit history
+git blame <file_name>            => see line-by-line changes in a file
+git clean -f                    => remove untracked files
+git config --global user.name "Your Name"    => set global username
+git config --global user.email "
