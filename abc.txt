@@ -11,6 +11,8 @@ git checkout <branch_name>       => rollback the changes  or switch to existing 
 
 
 // remote repository
+git rm <file_name>               => remove file
+git rm --cached -r .             => remove (rm) recursively (r) all file from folder
 
 
 git branch -M main               => rename branch
@@ -23,7 +25,6 @@ git merge <branch_name>          => merge branch into current branch
 git stash                        => save changes temporarily
 git stash pop                    => retrieve saved changes
 git reset --hard HEAD            => discard changes
-git rm <file_name>               => remove file
 git mv <old_name> <new_name>     => rename file
 git tag <tag_name>               => create a tag
 git show <tag_name>              => show tag details
