@@ -6,15 +6,20 @@ git status
 git commit -m "Initial commit"   => add commit
 git log                          => see the commit
 
+git diff                         => see changes
+git checkout <branch_name>       => rollback the changes  or switch to existing branch
+
+
+// remote repository
+
+
 git branch -M main               => rename branch
 git remote add origin <url>      => link to remote repo
 git push -u origin main         => push to remote repo
 git clone <url>                  => clone remote repo
 git pull <url>                   => pull from remote repo
 git checkout -b <branch_name>    => create and switch to new branch
-git checkout <branch_name>       => switch to existing branch
 git merge <branch_name>          => merge branch into current branch
-git diff                         => see changes
 git stash                        => save changes temporarily
 git stash pop                    => retrieve saved changes
 git reset --hard HEAD            => discard changes
