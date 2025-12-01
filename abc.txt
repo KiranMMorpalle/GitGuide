@@ -68,7 +68,7 @@ git add .
 git commit -m "message"
 git checkout main               => switch to main branch
 
-
+git log                         => see commits of diff branches.
 =================================================================
 
 git pull <url>                   => pull from remote repo
