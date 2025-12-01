@@ -1,3 +1,8 @@
+Note :
+* Best way to learn code is to see how other developers write code (see git repos)
+
+
+==================================================
 my data code.
 
 git init
@@ -10,15 +15,62 @@ git diff                         => see changes
 git checkout <branch_name>       => rollback the changes  or switch to existing branch
 
 
-// remote repository
+//====== remote repository =======
 git rm <file_name>               => remove file
 git rm --cached -r .             => remove (rm) recursively (r) all file from folder
 
-
-git branch -M main               => rename branch
 git remote add origin <url>      => link to remote repo
 git push -u origin main         => push to remote repo
+
+
+// ========= .gitignore =========
+
+# Node modules (Frontend + Backend)
+    client/node_modules/
+    server/node_modules/
+
+# Build output (React)
+    client/build/
+
+# Dist (if backend uses TypeScript or build step)
+    server/dist/
+
+# Environment variables
+    client/.env
+    server/.env
+    .env
+
+# Logs
+    *.log
+
+# Uploads or temporary files (optional but recommended)
+    server/uploads/
+
+# OS/system files
+    .DS_Store
+    Thumbs.db
+
+
+
+// ====== cloning ======
 git clone <url>                  => clone remote repo
+
+
+// ========== Branching & Merging =============
+
+git branch                      => see available branches
+git brach brach-name            => create new branch 
+git checkout branch-name        => switch to branch
+git branch -M main               => rename branch
+
+---- change the code -----
+git add .
+git commit -m "message"
+git checkout main               => switch to main branch
+
+git log                         => see commits of diff branches.
+=================================================================
+
 git pull <url>                   => pull from remote repo
 git checkout -b <branch_name>    => create and switch to new branch
 git merge <branch_name>          => merge branch into current branch
